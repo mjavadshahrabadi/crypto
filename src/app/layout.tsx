@@ -5,9 +5,10 @@ import localFont from 'next/font/local'
 import { ThemesProvider } from '@/components/themes/ThemesProvider'
 
 // cutome font - iran yekan
-const myFont = localFont({
+const yekan = localFont({
   src: './fonts/yekan.woff2',
   display: 'swap',
+  variable: '--font-yekan',
 })
 export const metadata: Metadata = {
   title: 'Crypto',
@@ -20,11 +21,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="fa">
       <body
-        className={`${myFont.className} bg-slate-50 dark:bg-gray-700 h-[100vh] w-[100vw]`}
+        className={`${yekan.className} bg-slate-100 dark:text-white dark:bg-secondary h-[100vh] w-[100vw]`}
       >
-        <ThemesProvider attribute="class">
+        <ThemesProvider attribute="class" enableSystem>
           <main>{children}</main>
         </ThemesProvider>
       </body>
