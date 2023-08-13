@@ -2,7 +2,9 @@ import './globals.css'
 import React from 'react'
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
+import { ThemesProvider } from '@/components/themes/ThemesProvider'
 
+// cutome font - iran yekan
 const myFont = localFont({
   src: './fonts/yekan.woff2',
   display: 'swap',
@@ -19,7 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={myFont.className}>{children}</body>
+      <body
+        className={`${myFont.className} bg-slate-50 dark:bg-gray-700 h-[100vh] w-[100vw]`}
+      >
+        <ThemesProvider attribute="class">
+          <main>{children}</main>
+        </ThemesProvider>
+      </body>
     </html>
   )
 }
