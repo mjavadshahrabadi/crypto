@@ -11,12 +11,12 @@ export const CoinRateItem: FC<ICoinRateItem> = ({
   title,
 }): ReactElement => {
   return (
-    <li className="h-[120px] lg:h-[130px] w-full relative object-contain border-b lg:border-b-0 lg:border-r last-of-type:border-none border-slate-400">
+    <li className="h-[110px] lg:h-[130px] w-full relative object-contain border-b lg:border-b-0 lg:border-r last-of-type:border-none border-slate-400">
       <Image
         src={imgSrc}
         alt={title}
         fill
-        className="px-4 first-of-type::px-0 pb-3 lg:pb-0"
+        className="px-4 first-of-type::px-0 pb-4 lg:pb-0"
       />
     </li>
   )
