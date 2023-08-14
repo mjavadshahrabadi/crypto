@@ -6,7 +6,7 @@ import { ThemesProvider } from '@/components/themes/ThemesProvider'
 
 // cutome font - iran yekan
 const yekan = localFont({
-  src: './fonts/yekan.woff2',
+  src: '../assets/fonts/yekan.woff2',
   display: 'swap',
   variable: '--font-yekan',
 })
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="fa">
       <body
-        className={`${yekan.className} bg-slate-100 dark:text-white dark:bg-secondary h-[100vh] w-[100vw]`}
+        className={`${yekan.className} bg-slate-100 dark:text-white dark:bg-secondary h-[100vh] overflow-x-hidden max-w-7xl mx-auto py-6 px-6 xl:px-0`}
       >
         <ThemesProvider attribute="class" enableSystem>
           <main>{children}</main>

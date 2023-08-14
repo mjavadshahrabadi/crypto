@@ -1,11 +1,14 @@
 import { FC, ReactElement } from 'react'
 import { Navbar } from '@/components/home/head/Navbar'
 import { Menu } from '@/components/home/head/Menu'
-
+import { Jumbotron } from '@/components/home/middle/Jumbotron'
+import { CoinRateList } from '@/components/home/middle/CoinRateList'
 export const HomeSection: FC = (): ReactElement => {
   return (
-    <section className="max-w-7xl mx-auto py-6 px-4 xl:px-0">
+    <section className="">
       <Navbar />
+      <Jumbotron />
+      <CoinRateList />
     </section>
   )
 }
