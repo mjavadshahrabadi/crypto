@@ -14,7 +14,7 @@ export const Jumbotron: FC = (): ReactElement => {
         </div>
       </div>
       <div className="w-full grid place-self-center">
-        <h2 className="text-5xl lg:text-7xl mt-8 lg:mt-0 dark:text-slate-200 tracking-normal leading-snug font-semibold text-center">
+        <h2 className="text-3xl lg:text-5xl mt-8 lg:mt-0 dark:text-slate-200 tracking-wide font-semibold text-right">
           بازار{' '}
           <span
             className="text-pink-500 font-semibold
@@ -40,7 +40,8 @@ export const Jumbotron: FC = (): ReactElement => {
             <FillStatIcon className="w-5 h-5 text-yellow-500" />
             <EmptyStartIcon className="w-5 h-5 text-yellow-500" />
             <small className="dark:text-slate-200 text-gray-800 ml-2">
-              میانگین امتیاز 4.8 ما را به بهترین برنامه های جهان تبدیل می کند
+              میانگین امتیاز 4.8 ما را به یکی از بهترین برنامه های جهان تبدیل می
+              کند
             </small>
           </div>
         </div>
