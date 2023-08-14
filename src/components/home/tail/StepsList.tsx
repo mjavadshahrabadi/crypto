@@ -11,7 +11,7 @@ import { StepDivider } from '@/components/home/tail/StepDivider'
 
 export const StepsList: FC = (): ReactElement => {
   return (
-    <ul className="w-full flex flex-col items-center lg:flex-row lg:items-start mt-20 dark:border dark:border-slate-600 rounded-md p-6 border-2 shadow-sm">
+    <ul className="w-full flex flex-col items-center lg:flex-row lg:items-start mt-20 dark:border dark:border-slate-600 rounded-md p-6 border shadow-sm">
       <StepsItem
         icon={
           <UserIcon className="w-9 h-9 dark:text-pink-500 text-indigo-500" />
