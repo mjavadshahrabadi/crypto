@@ -4,8 +4,6 @@ import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import DarkModeToggle from 'react-dark-mode-toggle'
 
-import { SunIcon, MoonIcon } from '@heroicons/react/24/solid'
-
 export const ToggleSwitch: FC = (): ReactElement | null => {
   const [mounted, setMounted] = useState(false)
 

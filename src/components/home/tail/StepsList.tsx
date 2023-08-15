@@ -1,12 +1,6 @@
 import React, { FC, ReactElement } from 'react'
 import { StepsItem } from '@/components/home/tail/StepsItem'
-import {
-  UserIcon,
-  HomeIcon,
-  WalletIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from '@heroicons/react/24/solid'
+import { UserIcon, HomeIcon, WalletIcon } from '@heroicons/react/24/solid'
 import { StepDivider } from '@/components/home/tail/StepDivider'
 
 export const StepsList: FC = (): ReactElement => {
