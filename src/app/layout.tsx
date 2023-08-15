@@ -3,6 +3,8 @@ import React from 'react'
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { ThemesProvider } from '@/components/themes/ThemesProvider'
+import { Navbar } from '@/components/home/head/Navbar'
+import { Footer } from '@/components/ui/Footer'
 
 // cutome font - iran yekan
 const yekan = localFont({
@@ -26,7 +28,11 @@ export default function RootLayout({
         className={`${yekan.className} bg-stone-200 dark:text-white dark:bg-secondary h-[100vh] overflow-x-hidden max-w-7xl mx-auto py-6 px-6 xl:px-0`}
       >
         <ThemesProvider attribute="class" enableSystem>
-          <main>{children}</main>
+          <main>
+            <Navbar />
+            {children}
+            <Footer />
+          </main>
         </ThemesProvider>
       </body>
     </html>
