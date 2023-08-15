@@ -3,7 +3,7 @@ import { QuestionAndAnswerList } from '@/components/f&q/QuestionAndAnswerList'
 
 export const QuestionAndAnswerContainer: FC = (): ReactElement => {
   return (
-    <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2 mt-24 lg:mt-32 gap-10 lg:gap-2">
+    <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2 mt-24 lg:mt-32 gap-10 lg:gap-2 place-items-center">
       <div className="order-1 lg:-order-2">
         <QuestionAndAnswerList />
       </div>
