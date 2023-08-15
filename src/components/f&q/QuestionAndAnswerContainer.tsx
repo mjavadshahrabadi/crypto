@@ -4,15 +4,15 @@ import { QuestionAndAnswerList } from '@/components/f&q/QuestionAndAnswerList'
 export const QuestionAndAnswerContainer: FC = (): ReactElement => {
   return (
     <div className="grid grid-cols-1 grid-rows-1 md:grid-cols-2 mt-24 lg:mt-32 gap-10 lg:gap-2 place-items-center">
-      <div className="order-1 lg:-order-2">
+      <div className="w-full order-1 lg:-order-2">
         <QuestionAndAnswerList />
       </div>
       <div className="flex flex-col items-end space-y-6">
-        <h2 className="dark:text-slate-200 text-gray-700 font-semibold text-4xl text-right">
+        <h2 className="dark:text-slate-200 text-gray-700 font-semibold text-4xl text-center lg:text-right ">
           هر <span className="text-pink-500">سوالی</span> دارید؟ پاسخ ها را در
           اینجا بیابید
         </h2>
-        <h4 className="dark:text-slate-400 text-gray-700 text-sm">
+        <h4 className="dark:text-slate-400 text-gray-700 text-sm text-center lg:text-right">
           پاسخ خود را در اینجا پیدا نمی کنید؟ فقط برای هر سوالی به ما پیام دهید
         </h4>
 

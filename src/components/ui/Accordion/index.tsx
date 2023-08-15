@@ -26,7 +26,7 @@ export const Accordion: React.FC<AccordionItemProps> = ({ title, content }) => {
             <ChevronDownIcon className="w-6 h-6 dark:text-slate-200 text-gray-700" />
           )}
         </div>
-        <h2 className="dark:text-slate-200 text-gray-500 font-semibold tracking-wide text-[13px] lg:text-[1rem]">
+        <h2 className="dark:text-slate-200 text-gray-500 font-semibold tracking-wide text-[13px] lg:text-[1rem] text-right">
           {title}
         </h2>
       </div>

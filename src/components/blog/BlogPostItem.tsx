@@ -12,8 +12,8 @@ export const BlogPostItem: FC<IBlogPostItem> = ({
   gradientStyle,
 }): ReactElement => {
   return (
-    <li className="z-10 relative w-[400px] h-[400px] md:w-[50px] md:h-[400px] lg:w-[580px] lg:h-[420px] mx-auto mt-14 rounded-md ">
-      <div className="w-full h-full relative ">
+    <li className="z-10 relative w-[350px] h-[350px] md:w-[50px] md:h-[400px] lg:w-[580px] lg:h-[420px]  mt-14 rounded-md p-4 mx-auto">
+      <div className="w-full h-full relative mx-auto">
         <Image
           src={imgSrc}
           alt={title}
