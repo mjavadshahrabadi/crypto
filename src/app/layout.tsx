@@ -5,6 +5,7 @@ import localFont from 'next/font/local'
 import { ThemesProvider } from '@/components/themes/ThemesProvider'
 import { Navbar } from '@/components/home/head/Navbar'
 import { Footer } from '@/components/ui/Footer'
+import { Author } from '@/components/ui/author'
 
 // cutome font - iran yekan
 const yekan = localFont({
@@ -32,6 +33,7 @@ export default function RootLayout({
             <Navbar />
             {children}
             <Footer />
+            <Author />
           </main>
         </ThemesProvider>
       </body>
