@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="fa">
       <body
-        className={`${yekan.className} bg-slate-100 dark:text-white dark:bg-secondary h-[100vh] overflow-x-hidden max-w-7xl mx-auto py-6 px-6 xl:px-0`}
+        className={`${yekan.className} bg-stone-200 dark:text-white dark:bg-secondary h-[100vh] overflow-x-hidden max-w-7xl mx-auto py-6 px-6 xl:px-0`}
       >
         <ThemesProvider attribute="class" enableSystem>
           <main>{children}</main>
